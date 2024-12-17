@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="219dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="150dp"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:background="#ffffff"
+        android:bottomRightRadius="10dp"
+        android:bottomLeftRadius="10dp"
+        android:topLeftRadius="10dp"
+        android:topRightRadius="10dp"
+        android:orientation="vertical"
+        android:padding="25dp">
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="130dp"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_gigo_logo" />
+
+
+
+        <ProgressBar
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:indeterminate="true"
+            android:indeterminateTintMode="src_atop"
+            android:indeterminateTint="#0F4C81"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="30dp" />
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Harap Menunggu"
+            android:textColor="#707070"
+            android:textSize="21dp"
+            />
+
+
+
+    </LinearLayout>
+</RelativeLayout>

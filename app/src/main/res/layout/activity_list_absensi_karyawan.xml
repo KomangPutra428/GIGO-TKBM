@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.drawerlayout.widget.DrawerLayout
+    android:id="@+id/dl_kehadiran"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="#ffffff"
+    android:layout_height="match_parent"
+    tools:context=".list_absensi_karyawan">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.google.android.material.appbar.AppBarLayout
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:elevation="8dp">
+
+            <com.google.android.material.appbar.MaterialToolbar
+                android:id="@+id/kehadiranBar"
+                android:layout_width="match_parent"
+                android:background="#ffffff"
+                app:titleTextColor="#212121"
+                android:layout_height="56dp"
+                app:title="List Absensi"
+                style="@style/Widget.MaterialComponents.Toolbar.Primary"
+                />
+        </com.google.android.material.appbar.AppBarLayout>
+
+        <ListView
+            android:id="@+id/list_absensi"
+            android:layout_below="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+
+
+    </RelativeLayout>
+
+
+</androidx.drawerlayout.widget.DrawerLayout>

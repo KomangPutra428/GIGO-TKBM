@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.tvip.getingetout">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACTION_MANAGE_NETWORK_USAGE" />
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
+    <uses-permission android:name="android.intent.action.BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.READ_CALENDAR" />
+    <uses-permission android:name="android.permission.WRITE_CALENDAR" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.WRITE_INTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.MANAGE_EXTERNAL_STORAGE" />
+
+    <uses-feature
+        android:name="android.hardware.camera"
+        android:required="false" />
+    <uses-feature
+        android:name="android.hardware.camera.front"
+        android:required="false" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/icon"
+        android:label="TVIP GIGO"
+        android:roundIcon="@drawable/icon"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        android:usesCleartextTraffic="true">
+        <activity
+            android:name=".list_shifting"
+            android:exported="true" />
+        <activity
+            android:name=".rekap_absensi"
+            android:exported="true" />
+        <activity
+            android:name=".absen_mobile_out"
+            android:exported="true"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".absen_mobile_leader"
+            android:screenOrientation="portrait"
+            android:exported="true"/>
+        <activity
+            android:name=".list_absensi_karyawan"
+            android:screenOrientation="portrait"
+            android:exported="true"/>
+        <activity
+            android:name=".list_karyawan"
+            android:screenOrientation="portrait"
+            android:exported="true"/>
+        <activity
+            android:name=".list_karyawan_tkbm"
+            android:screenOrientation="portrait"
+            android:exported="true"/>
+        <activity
+            android:name=".absen_mobile"
+            android:screenOrientation="portrait"
+            android:exported="true"/>
+        <activity
+            android:name=".biodata"
+            android:screenOrientation="portrait"
+            android:exported="true"/>
+        <activity
+            android:name=".menu"
+            android:screenOrientation="portrait"
+            android:exported="true"/>
+        <activity
+            android:name=".absenmobile"
+            android:screenOrientation="portrait"
+            android:exported="true"/>
+        <activity
+            android:name=".MainActivity"
+            android:screenOrientation="portrait"
+            android:exported="true"/>
+        <activity
+            android:name=".splash"
+            android:screenOrientation="portrait"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

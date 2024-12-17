@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.drawerlayout.widget.DrawerLayout
+    android:id="@+id/dl_kehadiran"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    tools:context=".list_karyawan_tkbm">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.google.android.material.appbar.AppBarLayout
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:elevation="8dp">
+
+            <com.google.android.material.appbar.MaterialToolbar
+                android:id="@+id/detailAbsen_Bar"
+                android:layout_width="match_parent"
+                android:background="#ffffff"
+                app:titleTextColor="#212121"
+                android:layout_height="56dp"
+                app:menu="@menu/top_app_bar"
+                app:title="Detail Absen"
+                android:theme="@style/Theme.MaterialComponents.DayNight.NoActionBar.Bridge"
+                />
+        </com.google.android.material.appbar.AppBarLayout>
+
+        <ListView
+            android:id="@+id/list_karyawan"
+            android:layout_below="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+
+
+    </RelativeLayout>
+
+
+</androidx.drawerlayout.widget.DrawerLayout>

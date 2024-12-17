@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="350dp"
+    android:layout_height="wrap_content"
+    xmlns:sweet="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:textColor="#000000"
+        android:text="Filter Tanggal"/>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_toLeftOf="@+id/filter"
+        android:layout_marginTop="16dp"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        sweet:boxCornerRadiusBottomEnd="4dp"
+        sweet:boxCornerRadiusBottomStart="4dp"
+        sweet:boxCornerRadiusTopEnd="4dp"
+        sweet:boxCornerRadiusTopStart="4dp"
+        sweet:boxStrokeColor="#0f4c81">
+
+        <EditText
+            android:id="@+id/mulai_tanggal"
+            android:layout_width="match_parent"
+            android:layout_height="52dp"
+            android:layout_gravity="center_horizontal"
+            android:focusable="false"
+            android:hint="Mulai Tanggal"
+            android:longClickable="false"
+            android:paddingLeft="10dp"
+            android:singleLine="true"
+            android:textSize="16dp" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_marginTop="16dp"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        sweet:boxCornerRadiusBottomEnd="4dp"
+        sweet:boxCornerRadiusBottomStart="4dp"
+        sweet:boxCornerRadiusTopEnd="4dp"
+        sweet:boxCornerRadiusTopStart="4dp"
+        sweet:boxStrokeColor="#0f4c81">
+
+        <EditText
+            android:id="@+id/sampai_tanggal"
+            android:layout_width="match_parent"
+            android:layout_height="52dp"
+            android:layout_gravity="center_horizontal"
+            android:focusable="false"
+            android:hint="Sampai Tanggal"
+            android:longClickable="false"
+            android:paddingLeft="10dp"
+            android:singleLine="true"
+            android:textSize="16dp" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/linearbutton"
+        android:gravity="center"
+        android:background="#ffffff"
+        android:padding="10dp"
+        android:layout_marginTop="24dp"
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <LinearLayout
+            android:gravity="center"
+            android:visibility="visible"
+            android:background="#ffffff"
+            android:layout_alignParentBottom="true"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/batal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/rounded_corner"
+                android:foreground="?android:attr/selectableItemBackground"
+                android:scaleType="fitXY"
+                android:layout_weight="1"
+                android:layout_marginRight="8dp"
+                android:text="Batal"
+                android:textAllCaps="false"
+                android:textColor="#0F4C81"
+                android:textStyle="bold" />
+            <Button
+                android:id="@+id/lanjutkan"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginLeft="8dp"
+                android:background="@drawable/rounded_corner"
+                android:backgroundTint="#0F4C81"
+                android:foreground="?android:attr/selectableItemBackground"
+                android:scaleType="fitXY"
+                android:text="Ok"
+                android:textAllCaps="false"
+                android:textColor="#FFF"
+                android:textStyle="bold" />
+        </LinearLayout>
+    </com.google.android.material.card.MaterialCardView>
+
+
+
+
+</LinearLayout>

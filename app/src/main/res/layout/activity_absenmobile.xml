@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    tools:context=".absenmobile">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <TextView
+            android:id="@+id/kode"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:text="kode"
+            android:visibility="gone"
+            android:textColor="#333"
+            android:textSize="20dp"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="5dp"
+            android:gravity="center"
+            android:text="Absen Mobile"
+            android:textColor="#333"
+            android:layout_marginTop="15dp"
+            android:textSize="21dp"
+            />
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/nik"
+            android:layout_below="@id/title"
+            android:layout_width="fill_parent"
+            app:boxCornerRadiusBottomEnd="30dp"
+            app:boxCornerRadiusTopEnd="30dp"
+            app:boxCornerRadiusBottomStart="30dp"
+            app:boxCornerRadiusTopStart="30dp"
+            android:paddingLeft="30dp"
+            android:paddingRight="30dp"
+            android:layout_height="60dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="10dp"
+            android:layout_centerHorizontal="true">
+            <EditText
+                android:id="@+id/nikbaru"
+                android:layout_width="fill_parent"
+                android:clickable="true"
+                android:focusable="false"
+                android:textColor="#393939"
+                android:longClickable="false"
+                android:singleLine="true"
+                android:layout_gravity="center_horizontal"
+                android:layout_height="53dp"
+                android:hint="NIK Baru"/>
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/editnopolisi"
+            android:layout_below="@id/nik"
+            android:layout_width="fill_parent"
+            app:boxCornerRadiusBottomEnd="30dp"
+            app:boxCornerRadiusTopEnd="30dp"
+            app:boxCornerRadiusBottomStart="30dp"
+            android:paddingLeft="30dp"
+            android:paddingRight="30dp"
+            app:boxCornerRadiusTopStart="30dp"
+            android:layout_height="60dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:layout_centerHorizontal="true">
+            <EditText
+                android:id="@+id/polisi"
+                android:layout_width="fill_parent"
+                android:clickable="true"
+                android:focusable="false"
+                android:textColor="#BEBEBE"
+                android:longClickable="false"
+                android:singleLine="true"
+                android:layout_gravity="center_horizontal"
+                android:layout_height="53dp"
+                android:hint="Nama Karyawan"/>
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <LinearLayout
+            android:id="@+id/listing"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/editnopolisi"
+            android:layout_marginLeft="50dp"
+            android:layout_marginTop="20dp"
+            android:layout_centerHorizontal="true"
+            android:orientation="vertical"
+            android:background="@drawable/listview">
+
+            <ListView
+                android:id="@+id/products"
+                android:layout_width="fill_parent"
+                android:layout_marginTop="-2dp"
+                android:nestedScrollingEnabled="true"
+                android:layout_height="144dp"
+                android:layout_gravity="center_horizontal"
+                />
+        </LinearLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/jammuai"
+            android:layout_below="@id/listing"
+            android:layout_width="fill_parent"
+            android:visibility="gone"
+            app:boxCornerRadiusBottomEnd="30dp"
+            android:paddingLeft="30dp"
+            android:paddingRight="30dp"
+            app:boxCornerRadiusTopEnd="30dp"
+            app:boxCornerRadiusBottomStart="30dp"
+            app:boxCornerRadiusTopStart="30dp"
+            android:layout_height="60dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:layout_centerHorizontal="true">
+            <EditText
+                android:id="@+id/mulai"
+                android:layout_width="fill_parent"
+                android:clickable="true"
+                android:focusable="false"
+                android:textColor="#BEBEBE"
+                android:longClickable="false"
+                android:singleLine="true"
+                android:layout_gravity="center_horizontal"
+                android:layout_height="53dp"
+                android:hint="Jam Mulai"/>
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/jamkeluar"
+            android:layout_below="@id/jammuai"
+            android:layout_width="fill_parent"
+            app:boxCornerRadiusBottomEnd="30dp"
+            android:paddingLeft="20dp"
+            android:visibility="gone"
+            android:padding="30dp"
+            app:boxCornerRadiusTopEnd="30dp"
+            app:boxCornerRadiusBottomStart="30dp"
+            app:boxCornerRadiusTopStart="30dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:layout_centerHorizontal="true">
+            <EditText
+                android:id="@+id/keluar"
+                android:layout_width="fill_parent"
+                android:clickable="true"
+                android:focusable="false"
+                android:longClickable="false"
+                android:textColor="#BEBEBE"
+                android:singleLine="true"
+                android:layout_gravity="center_horizontal"
+                android:layout_height="53dp"
+                android:hint="Jam Keluar"/>
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <LinearLayout
+            android:id="@+id/buttonPanel"
+            android:layout_width="match_parent"
+            android:layout_height="91dp"
+            android:layout_below="@+id/jamkeluar"
+            android:layout_centerHorizontal="true"
+            android:gravity="center"
+            android:layout_marginTop="30dp"
+            android:layout_marginBottom="5dp"
+            android:orientation="horizontal"
+            android:paddingBottom="20dp">
+
+            <Button
+                android:id="@+id/start"
+                android:layout_width="350dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/rounded_corner"
+                android:backgroundTint="#5CB85C"
+                android:scaleType="fitXY"
+                android:visibility="gone"
+                android:text="Mulai"
+                android:textAllCaps="false"
+                android:textColor="#fff"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/finish"
+                android:layout_width="350dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/rounded_corner"
+                android:backgroundTint="#D9534F"
+                android:scaleType="fitXY"
+                android:text="Selesai"
+                android:textAllCaps="false"
+                android:textColor="#fff"
+                android:textStyle="bold"
+                android:visibility="gone" />
+
+            <Button
+                android:id="@+id/simpan"
+                android:layout_width="350dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/rounded_corner"
+                android:backgroundTint="#0F4C81"
+                android:scaleType="fitXY"
+                android:text="Simpan"
+                android:visibility="gone"
+                android:textAllCaps="false"
+                android:textColor="#fff"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+    </RelativeLayout>
+</ScrollView>

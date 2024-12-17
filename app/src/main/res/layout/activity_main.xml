@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    tools:context=".MainActivity">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+    <ImageView
+        android:id="@+id/icon"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_marginTop="120dp"
+        android:layout_gravity="center"
+        android:scaleType="fitCenter"
+        android:src="@drawable/ic_gigo_logo" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_marginLeft="48dp"
+        android:layout_marginRight="48dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="Hallo,\nSelamat Datang"
+        android:textColor="#000000"
+        android:textStyle="bold"
+        android:layout_marginTop="24dp"
+        android:textSize="48dp"
+        android:layout_below="@+id/icon"
+        android:layout_centerHorizontal="true"/>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/username"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="48dp"
+        android:paddingRight="48dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        app:boxCornerRadiusBottomEnd="4dp"
+        app:boxCornerRadiusBottomStart="4dp"
+        app:boxCornerRadiusTopEnd="4dp"
+        app:boxCornerRadiusTopStart="4dp"
+        app:boxStrokeColor="#0F4C81"
+        android:layout_below="@+id/textView"
+        >
+
+        <EditText
+            android:id="@+id/editusername"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_gravity="center_horizontal"
+            android:hint="NIK Karyawan"
+            android:singleLine="true"
+            android:textSize="14dp"
+            tools:layout_editor_absoluteX="41dp"
+            tools:layout_editor_absoluteY="442dp" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/password"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingRight="48dp"
+        android:paddingLeft="48dp"
+        app:endIconMode="password_toggle"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        app:boxCornerRadiusBottomEnd="4dp"
+        app:boxCornerRadiusBottomStart="4dp"
+        app:boxCornerRadiusTopEnd="4dp"
+        app:boxCornerRadiusTopStart="4dp"
+        app:boxStrokeColor="#0F4C81"
+        android:layout_below="@+id/username"
+        >
+
+        <EditText
+            android:id="@+id/editpassword"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_gravity="center_horizontal"
+            android:hint="Password"
+            android:inputType="textPassword"
+            android:singleLine="true"
+            android:textSize="14dp" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+        <Button
+            android:id="@+id/login"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/password"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/rounded_corner"
+            android:backgroundTint="#0f4c81"
+            android:foreground="?android:attr/selectableItemBackground"
+            android:gravity="center"
+            android:layout_marginRight="48dp"
+            android:layout_marginLeft="48dp"
+            android:scaleType="fitXY"
+            android:text="Login"
+            android:textAllCaps="false"
+            android:textColor="#FFF"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.511"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintVertical_bias="0.943" />
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="20dp"
+        android:layout_alignParentBottom="true">
+        <ImageView
+            android:id="@+id/logo"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+             />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/logo"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="20dp"
+            android:textSize="10dp"
+            android:layout_gravity="center_horizontal"
+            android:text="Mobile Get in Get Out V.1.0.0"
+           />
+    </LinearLayout>
+    </LinearLayout>
+</ScrollView>
